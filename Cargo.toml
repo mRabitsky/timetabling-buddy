@@ -1,0 +1,14 @@
+[package]
+name = "timetabling-buddy"
+version = "0.1.0"
+authors = ["mdr <mdr.dev@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+itertools = "0.9.0"
+rayon = "1.3.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+smallvec = { version = "1.4.0", features = ["write", "union", "const_generics", "serde"] }
+structopt = { version = "0.3", features = ["default", "suggestions", "color", "wrap_help"] }
